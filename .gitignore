@@ -1,0 +1,34 @@
+node_modules/
+**/*TestResult*.xml
+
+# sonar runtime files
+.sonarqube/
+
+# coverity files
+.cov
+
+# reports
+reports/
+TestResults/
+
+# any temporary merge backup files craeted by Kdiff3
+**/*.orig
+.vs/
+.vscode/
+
+# publish
+**/publish
+**/**/obj
+**/**/bin
+
+# Generated Swagger Definition file
+service-definition.json
+
+npm-debug.log
+.idea/
+/.zeus_int_test_env
+/.zeus.preprod
+/.zeus.prod
+/.zeus.int
+
+*.DotSettings.user
