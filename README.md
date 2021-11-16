@@ -1,10 +1,12 @@
-# Run Kafka and Zookeeper with docker-compose
+# A kinda fizz buzz using Kafka
+
+## Run Kafka and Zookeeper with docker-compose
 
 ```sh
 docker-compose up -d
 ```
 
-# Create Topic
+## Create Topic
 
 ```sh
 docker compose exec kafka-1 \
@@ -15,21 +17,21 @@ docker compose exec kafka-1 \
     --partitions 1
 ```
 
-# Run the producer
+## Run the producer
 
 ```sh
 dotnet run --project producer.csproj $PWD/getting-started.properties
 ```
 
-# Run the consumer
+## Run the consumer
 
 ```sh
 dotnet run --project consumer.csproj $PWD/getting-started.properties 
 ```
 
-# Hint
+## Hint
 Use [OffsetExplorer](https://www.kafkatool.com/) to inspect Kafka Brokers, Topics, Producers and Consumers
 
-# Sources
+## Sources
 - https://www.baeldung.com/ops/kafka-docker-setup
 - https://developer.confluent.io/get-started/dotnet
